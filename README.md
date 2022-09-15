@@ -23,7 +23,7 @@ cd /usr/lib/jvm/java-17-openjdk-amd64
 ```bash
 pwd
 ```
-Copy Path
+**Copy Path**
 ![Copy Path](https://github.com/ritikvirus/Jenkins/blob/main/images/path_copy.PNG)
 ```bash
 sudo vim /etc/profile
