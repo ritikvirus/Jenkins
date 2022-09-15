@@ -115,7 +115,7 @@ Then Click **Continue** Button
 ![completed](https://raw.githubusercontent.com/ritikvirus/Jenkins/main/images/jenkins-plugins-installation-progress-ubuntu.webp)
 
 ### Next Step Create First Admin User
-![Admin_creation]()
+![Admin_creation](https://github.com/ritikvirus/Jenkins/blob/main/images/Create%20first%20admin%20user.PNG)
 
 ### Jankins Is Ready!
 Click Start using jenkins
