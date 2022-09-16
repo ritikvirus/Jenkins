@@ -15,7 +15,10 @@ sudo yum upgrade -y
 ```
 ### Install Java
 ```bash
-sudo yum install java-11-openjdk-devel
+sudo yum install java-11-openjdk-devel -y
+```
+```bash
+sudo update-alternatives --config java
 ```
 ## Set Java Environment PATH On RedHat
 Find JAVA Path
@@ -41,32 +44,28 @@ sudo vi .bash_profile
 Paste These Lines
 
 ```bash
-export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-11.0.16.1.1-1.el8_6.x86_64
 export PATH=$JAVA_HOME/bin:$PATH
 ```
-![Example1](https://github.com/ritikvirus/Jenkins/blob/main/images/JAVA17SS.PNG)
+![Example1](https://github.com/ritikvirus/Jenkins/blob/main/images/java%20path%20variable%20in%20redhat.PNG)
 
 ## Now Jenkins Installation Commands
 Its official repository  
 With Java installed, we can now proceed to install Jenkins. The second step is to import the Jenkins GPG key from Jenkins repository as shown
 ```bash
-curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee \
-/usr/share/keyrings/jenkins-keyring.asc > /dev/null
+sudo yum install wget -y
 ```
-Next, Configure Jenkins repository To the sources list file echo adn tee command.
-
 ```bash
-echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
-https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
-/etc/apt/sources.list.d/jenkins.list > /dev/null
+wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
+# rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 ```
 ### Next, Update the system's Package List.
 ```bash
-sudo apt update -y
+sudo yum update -y
 ```
 And Install Jenkins as Follows.
 ```bash
-sudo apt install jenkins -y
+sudo yum install jenkins -y
 ```
 Once The Installation is complete, jenkins should Start. Run The Command
 ```bash
@@ -76,44 +75,7 @@ sudo systemctl start jenkins
 ```bash
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
-## End The Process For AWS EC2 User
----------------------------------------------------------------------------------------
 
-# If Your Installing Jenkins In our Laptop Or Pc You Should Run these Commands
-Open ports 8080 in your laptop/pc 
-
-```bash
-sudo ufw enable
-```
-To Open Port 8080 on ufw firewall, run the command:
-```bash
-sudo ufw allow 8080/tcp
-```
-Then reload the firewall to effect the changes.
-```bash
-sudo ufw reload
-```
-To confirm that port 8080 is open on the firewall, execute the commands:
-```bash
-sudo ufw status
-```
-![Check Status](https://raw.githubusercontent.com/ritikvirus/Jenkins/main/images/Ubuntu-firewall-status-jenkins.webp)
-
-
-### Check Your System 
-```bash
-id addr show
-```
-
-![checkIP](https://raw.githubusercontent.com/ritikvirus/Jenkins/main/images/View-IP-Address-Ubuntu-Linux.webp)
-
-Paste Your Ip with :8080
-Example : ***192.168.1.3:8080***
-
-### To View Password 
-```bash
-sudo cat /var/lib/jenkins/secrets/initialAdminPassword
-```
 Copy Password Paste in **Administrator password** Box  
 Then Click **Continue** Button  
 ![CopyPassword_and_paste](https://raw.githubusercontent.com/ritikvirus/Jenkins/main/images/Unlock-Jenkins-Page-Ubuntu-Linux-1.webp)
