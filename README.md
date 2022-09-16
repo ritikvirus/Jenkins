@@ -44,8 +44,8 @@ sudo vi .bash_profile
 Paste These Lines
 
 ```bash
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-11.0.16.1.1-1.el8_6.x86_64
-export PATH=$JAVA_HOME/bin:$PATH
+JAVA_HOME=/usr/lib/jvm/java-11-openjdk-11.0.16.1.1-1.el8_6.x86_64
+PATH=$JAVA_HOME/bin:$PATH
 ```
 ![Example1](https://github.com/ritikvirus/Jenkins/blob/main/images/java%20path%20variable%20in%20redhat.PNG)
 
