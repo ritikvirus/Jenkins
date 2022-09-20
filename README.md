@@ -55,8 +55,9 @@ export PATH=$PATH:$JAVA_HOME/bin
 ```bash
 source ~/.bashrc
 ```
-### M2_HOME-M2 This Variable is Use For Maven Inviroment variable set 
-if you have set only java variable then ignore it M2_HOME M2 lines
+![CopyVariable](https://github.com/ritikvirus/Jenkins/blob/main/images/only_variable_for_20.04.PNG)
+### Use Only Maven For Maven variable Set
+M2_HOME M2
 ![Example1](https://github.com/ritikvirus/Jenkins/blob/main/images/paste%20export%20lines%20ubuntu%2020.PNG)
 
 ## Now Jenkins Installation Commands
