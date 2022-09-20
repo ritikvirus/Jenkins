@@ -56,7 +56,7 @@ export PATH=$PATH:$JAVA_HOME/bin
 source ~/.bashrc
 ```
 ![CopyVariable](https://github.com/ritikvirus/Jenkins/blob/main/images/only_variable_for_20.04.PNG)
-### Use Only Maven For Maven variable Set
+### Use Only For Maven variable Set
 M2_HOME M2
 ![Example1](https://github.com/ritikvirus/Jenkins/blob/main/images/paste%20export%20lines%20ubuntu%2020.PNG)
 
