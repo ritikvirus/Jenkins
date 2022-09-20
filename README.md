@@ -1,10 +1,11 @@
 # Jenkins Installation On Ubuntu 20.04
 Jenkins – an open source automation server which enables developers around the world to reliably build, test, and deploy their software.
 ## Prerequisites
-1. EC2 ubuntu 22.04 Instance
+1. EC2 ubuntu 20.04 Instance
    With Internet Access
    Security Group with Port 8080 open for internet
-2. openjdk-17-jre-headless 
+2. openjdk-11-jdk
+3. openjdk-11-jre 
 ```bash
 sudo apt update -y
 ```
@@ -54,7 +55,9 @@ export PATH=$PATH:$JAVA_HOME/bin
 ```bash
 source ~/.bashrc
 ```
-![Example1](https://github.com/ritikvirus/Jenkins/blob/main/images/JAVA17SS.PNG)
+### M2_HOME-M2 This Variable is Use For Maven Inviroment variable set 
+if you have set only java variable then ignore it M2_HOME M2 lines
+![Example1](https://github.com/ritikvirus/Jenkins/blob/main/images/paste%20export%20lines%20ubuntu%2020.PNG)
 
 ## Now Jenkins Installation Commands
 Its official repository  
