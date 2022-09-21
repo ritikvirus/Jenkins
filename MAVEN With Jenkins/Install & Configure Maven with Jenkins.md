@@ -58,9 +58,9 @@ export M2=$M2_HOME/bin
 ```
 Add This line in PATH & You Can Also Replace this lines
 ```bash
-export PATH:$M2_HOME:$M2:$JAVA_HOME/bin:$PATH
+export export PATH=$PATH:$M2_HOME:$M2:$JAVA_HOME/bin
 ```
-![exportm2_home_m2](https://github.com/ritikvirus/Jenkins/blob/main/images/export%20m2_home%20and%20m2.PNG)  
+![exportm2_home_m2](https://github.com/ritikvirus/Jenkins/blob/main/images/path_variableJDK11.PNG)  
 
 ### Now Open Jenkins And Configure With Maven
 
