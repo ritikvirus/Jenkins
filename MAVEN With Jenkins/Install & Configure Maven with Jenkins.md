@@ -5,7 +5,7 @@ sudo apt update -y && sudo apt upgrade -y
 ```
 ### Go To Maven Official Copy Download Maven Link 
 
-You Can Download By Gooogle Search and This [LINK](https://maven.apache.org/download.cgi)  
+You Can Download By Gooogle Search and This [Link](https://maven.apache.org/download.cgi)  
 
 Right Click Version & Copy link Address
 
