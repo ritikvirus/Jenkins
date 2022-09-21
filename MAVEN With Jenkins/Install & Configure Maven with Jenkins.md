@@ -82,6 +82,7 @@ Clilck available
 
 -  Search Plugins and Tick 
   - `maven invoker` `maven integration`  
+  Click Install without Restart
  
  ![install plugin](https://github.com/ritikvirus/Jenkins/blob/main/images/plugins%20maven.PNG)  
  
