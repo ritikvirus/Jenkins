@@ -87,7 +87,7 @@ Clilck available
  ![install plugin](https://github.com/ritikvirus/Jenkins/blob/main/images/plugins%20maven.PNG)  
  
  ### Setup Is Completed & Now Build Your Project
- sample project [link](https://github.com/ritikvirus/hello-world-maven.git)  
+ Sample Project [link](https://github.com/ritikvirus/hello-world-maven.git)  
    
  
  
